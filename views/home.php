@@ -1,15 +1,15 @@
 <main>
     <h1>Formulaire</h1>
-    <form   method="POST" id="form">
+    <form   method="GET" id="form">
         <!-- NOMBRE D'ARTICLES SUR UNE PAGE-->
-         <div class="articles">
+         <!--<div class="articles">
             <label for="six">6 Articles</label>
             <input type="radio" id="six" name="six">
             <label for="nine">9 Articles</label>
             <input type="radio" id="nine" name="nine">
             <label for="twelve">12 Articles</label>
             <input type="radio" id="twelve" name="twelve">
-        </div> 
+        </div> -->
         <!-- CHOIX DE LA CATÉGORIE-->
         
         <div class="choice">
