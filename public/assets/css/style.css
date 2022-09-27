@@ -1,0 +1,142 @@
+/* reset CSS */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+@font-face {
+    font-family: rubikmonoone;
+    src: url(../font/RubikMonoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../font/Montserrat-Medium.ttf);
+}
+
+/* Body */
+
+body {
+    background-color: #F3F3F3;
+    color: #050625;
+    font-family: montserrat;
+}
+
+a,
+a:visited {
+    color: #F3F3F3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cd008f;
+}
+
+/* ------HEADER------ */
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #050625;
+    color: #F3F3F3;
+    padding: 2rem 3rem;
+    border-bottom: #AE0079 2px solid;
+}
+
+/* User */
+
+.user-actuality {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.user-actuality h1 {
+    margin-bottom: 2rem;
+    font-family: rubikmonoone;
+}
+
+.user-actuality span {
+    padding: 0 1rem;
+}
+
+
+/* Settings */
+.settings a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.settings a i {
+    font-size: 1.5rem;
+}
+
+.settings a i,
+.settings a span {
+    padding: 5px;
+}
+
+
+/* Footer */
+footer {
+    height: fit-content;
+    padding: 50px;
+    background-color: #050625;
+    border-top: #AE0079 2px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-mandatory {
+    margin: 0 auto 2rem;
+    border-top: 2px solid #ae007a7c;
+    border-bottom: 2px solid #ae007a7c;
+    width: fit-content;
+    padding: 10px 0;
+}
+
+footer .footer-mandatory a {
+    padding: 10px;
+}
+
+footer .social-medias {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .social-medias h6 {
+    color: #F3F3F3;
+    font-size: 1rem;
+    padding: 0 5px;
+    margin-right: 2rem;
+
+}
+
+footer .social-medias a {
+    padding: 0 5px;
+    border: 1px solid #F3F3F3;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+footer .social-medias a:hover {
+    border: 1px solid #AE0079;
+    color: #AE0079;
+}
