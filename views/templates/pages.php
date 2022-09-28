@@ -1,3 +1,4 @@
+
 <main>
-    <?=$test?>
+  <p>bonjour</p>
 </main>
