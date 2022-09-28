@@ -25,19 +25,19 @@
                 <!-- Choix users -->
                 <div>
                     <span>
-                        <a href="/./controllers/pages_controllers.php">Premiere actu</a>
+                        <a href="/./controllers/pagesControllers.php">Premiere actu</a>
                     </span>
                     <span>
-                        <a href="/./controllers/pages_controllers.php">Deuxieme actu</a>
+                        <a href="/./controllers/pagesControllers.php">Deuxieme actu</a>
                     </span>
                     <span>
-                        <a href="/./controllers/pages_controllers.php">troisieme actu</a>
+                        <a href="/./controllers/pagesControllers.php">troisieme actu</a>
                     </span>
                 </div>
             </div>
             <!-- Settings -->
             <div class="settings">
-                <a href="/./controllers/parameters_controller.php">
+                <a href="/controllers/parametersController.php">
                     <i class="fa-solid fa-gears"></i>
                     <span>Options</span>
                 </a>

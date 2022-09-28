@@ -119,11 +119,14 @@ h4 {
     border-bottom: #4B96DB 5px solid;
 }
 
+h1 {
+    font-family: montserrat-black;
+    font-size: 2.5rem;
+}
+
 .herobanner h1 {
     color: #F3F3F3;
-    font-family: montserrat-black;
     margin-bottom: 1rem;
-    font-size: 2.8rem;
 }
 
 .herobanner p {
@@ -139,7 +142,7 @@ section {
 }
 
 .title-section {
-    border-bottom: 2px solid #4B96DB;
+    border-bottom: 5px solid #4B96DB;
     display: flex;
     justify-content: space-between;
     margin-bottom: 5rem;
@@ -194,6 +197,7 @@ h3 {
     align-items: flex-start;
     justify-content: center;
     border-top: 2px solid #181818;
+    align-items: center;
 }
 
 .title-article h4 {
@@ -204,6 +208,14 @@ h3 {
 }
 
 /* ---------PAGES---------- */
+.title-section.main-title-page {
+    display: flex;
+    justify-content: center;
+    border: none;
+    text-decoration: 10px #4B96DB underline;
+    margin-bottom: 10rem;
+}
+
 .title-article-section.title-section {
     margin-bottom: 3rem;
     align-items: center;
@@ -213,7 +225,11 @@ h3 {
     display: grid;
     grid-template-columns: 70% 30%;
     max-width: 75%;
-    margin-bottom: 7rem;
+    margin: 0 auto 8rem;
+}
+
+.title-section-date {
+    margin-bottom: 2rem;
 }
 
 .img-articles-pages {
@@ -226,21 +242,93 @@ h3 {
     margin-left: 1rem;
 }
 
-.button-title-section {
+.button-article-section {
     margin-top: 3rem;
 }
 
-.button-title-section a {
+.button-article-section a,
+button {
     border: 2px solid #4B96DB;
     color: #181818;
     padding: 5px 10px;
     border-radius: 10px;
 }
 
-.button-title-section a:hover {
-
+.button-article-section a:hover,
+button:hover {
+    cursor: pointer;
     color: #F3F3F3;
     background-color: #4B96DB;
+}
+
+/* ---------Formulaire---------- */
+.background-form {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/background-form.jpg) center / cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    background-color: #F3F3F3;
+    border: 3px solid #4B96DB;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 30rem;
+}
+
+.form h1 {
+    text-align: center;
+    text-decoration: 10px #4B96DB underline;
+    margin-bottom: 1rem;
+}
+
+.form p {
+    text-align: center;
+    margin: 0.5rem 0 3rem;
+}
+
+.error-text {
+    color: red;
+    text-align: center;
+    grid-column: 2/3;
+    margin-bottom: 1rem !important;
+}
+
+.article-form h2,
+.category h2 {
+    text-align: center;
+    text-transform: none;
+}
+
+
+
+.userchoice-number-article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.userchoice-number-article,
+.userchoice-categories-article {
+    margin: 2rem 0;
+}
+
+.userchoice-number-article div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1rem;
+}
+
+.userchoice-number-article div label,
+.userchoice-categories-article div {
+    margin-bottom: 1rem;
 }
 
 /* -------FOOTER------ */
@@ -307,7 +395,7 @@ footer .footer-mandatory a {
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1080px) {
     .article-pages {
         grid-template-columns: 100%;
     }
@@ -323,6 +411,13 @@ footer .footer-mandatory a {
         height: 100%;
         margin-left: 0;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    section {
+        padding: 0 1.5rem;
+
     }
 }
 

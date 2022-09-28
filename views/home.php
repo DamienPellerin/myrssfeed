@@ -9,12 +9,12 @@
     <section class="catégorie">
         <div class="title-section">
             <!-- Variable catégorie -->
-            <h3>Tous les tests</h3>
+            <h3><?= $valueCookie[0]; ?></h3>
             <span><a href="">voir tout</a></span>
         </div>
         <div class="all-articles">
             <?php
-            displayArticleHome('https://www.jeuxactu.com/rss/tests.rss', 5);
+            displayArticleHome($valueCookie[0], $numberArticle);
             ?>
         </div>
     </section>
@@ -27,7 +27,7 @@
         </div>
         <div class="all-articles">
             <?php
-            displayArticleHome('https://www.jeuxactu.com/rss/pc.rss', 5);
+            displayArticleHome($valueCookie[1], $numberArticle);
             ?>
         </div>
     </section>
@@ -40,7 +40,7 @@
         </div>
         <div class="all-articles">
             <?php
-            displayArticleHome('https://www.jeuxactu.com/rss/tips.rss', 5);
+            displayArticleHome($valueCookie[2], $numberArticle);
             ?>
 
         </div>

@@ -5,15 +5,8 @@
 //--------------------------
 require_once __DIR__ . '/../config/helpers/fonctions.php';
 
-
-
-var_dump($_COOKIE['category']);
-var_dump($category);
-
-
-if ($_COOKIE['categorie'] && $_COOKIE['article']) {
-    $categorieName = unserialize($_COOKIE['categorie']);
-}
+$numberArticle = $_COOKIE['article'];
+$valueCookie = unserialize($_COOKIE['categorie']);
 
 $title = "Gérer vos parametres";
 
