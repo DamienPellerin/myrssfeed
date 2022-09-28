@@ -8,8 +8,6 @@
     <title><?= $title ?></title>
     <link rel="stylesheet" href="/./public/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-
-
 </head>
 
 <body>
@@ -22,7 +20,7 @@
             </div>
             <div class="user-actuality">
                 <div>
-                    <h1>Votre actualités</h1>
+                    <h2>Votre actualités</h2>
                 </div>
                 <!-- Choix users -->
                 <div>
@@ -41,7 +39,7 @@
             <div class="settings">
                 <a href="/./controllers/parameters_controller.php">
                     <i class="fa-solid fa-gears"></i>
-                    <span>settings</span>
+                    <span>Options</span>
                 </a>
             </div>
         </nav>
