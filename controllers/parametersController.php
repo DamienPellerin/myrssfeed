@@ -24,13 +24,14 @@
             echo 'donnée non valide';
             
             }
-
+            
             //COOKIE CHOIX DE LA CATEGORIE //
-        $categorys = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_NUMBER_INT, FILTER_REQUIRE_ARRAY) ?? [];
+        $categorys = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY) ?? [];
+        
         if (empty($categorys)) {
             echo 'Remplir le formulaire';
     
-        } else if (count($categorys) < 2 || 3 > count($categorys)) {
+        } else if (count($categorys) != 3) {
             echo 'Donée non valide';
              
             } else {
@@ -40,16 +41,12 @@
                     $valueCookie,
                     time() + (86400 * 30),
                     "/");
-                    $categorys== true;     
+                    $categorys== true;  
             }  
-            if ($nbArticles == true && $categorys == true){
-                echo 'hello';
-            }else{
-                echo 'return'; 
-            }      
-    } 
+    
+} 
     $test = unserialize($_COOKIE['categorie']);
-    var_dump($test[0]);
+    var_dump($test);
+    
  
    
-    
