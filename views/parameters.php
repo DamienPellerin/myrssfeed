@@ -14,23 +14,10 @@
 
         <!-- CHOIX DE LA CATÉGORIE-->
         <div class="category">
-            <div class="error"><?= $error ?? '' ?></div>
-            <div class="test">
-                <label for="test">Tous les tests</label>
-                <input type="checkbox" id="test" value="0" name="category[]">
-            </div>
-            <div class="actu">
-                <label for="actu">Actu</label>
-                <input type="checkbox" id="actu" value="1" name="category[]">
-            </div>
-            <div class="actuArcade">
-                <label for="actuArcade">Actualités Arcade</label>
-                <input type="checkbox" id="actuArcade" value="2" name="category[]">
-            </div>
-            <div class="astuce">
-                <label for="astuce">Astuce et Soluces</label>
-                <input type="checkbox" id="astuce" value="3" name="category[]">
-            </div>
+            <?php foreach ($links as $key => $link) { ?>
+                <label for="test"><?= $key ?></label>
+                <input type="checkbox" id="test" value="<?= $link ?>" name="category[]">
+            <?php } ?>
         </div>
         <button type="submit">Envoie</button>
     </form>

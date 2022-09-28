@@ -42,6 +42,7 @@
             <?php
             displayArticleHome('https://www.jeuxactu.com/rss/tips.rss', 5);
             ?>
+
         </div>
     </section>
 </main>

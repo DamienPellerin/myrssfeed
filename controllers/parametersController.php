@@ -1,5 +1,12 @@
 <?php
 
+require_once(__DIR__ . './../config/config.php');
+include(__DIR__ . './../controllers/parametersController.php');
+
+
+
+
+
 // DONNÉES RECU EN METHOD POST //
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -20,10 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     //COOKIE CHOIX DE LA CATEGORIE //
-    $categorys = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_NUMBER_INT, FILTER_REQUIRE_ARRAY) ?? [];
+    $categorys = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY) ?? [];
+
     if (empty($categorys)) {
         echo 'Remplir le formulaire';
-    } else if (count($categorys) < 2 || 3 > count($categorys)) {
+    } else if (count($categorys) != 3) {
         echo 'Donée non valide';
     } else {
         $valueCookie = serialize($categorys);
@@ -33,11 +41,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             time() + (86400 * 30),
             "/"
         );
+        $categorys == true;
+        // var_dump(unserialize($valueCookie));
     }
 }
 
-// if ($_COOKIE['categorie'] && $_COOKIE['article']) {
-//     header('location : http://myrssfeed.localhost/controllers/homeControllers.php');
-// }
 
 include(__DIR__ . '/../views/parameters.php');
