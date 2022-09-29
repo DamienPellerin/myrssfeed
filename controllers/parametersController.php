@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // COOKIE NOMBRE D'ARTICLE //
     $nbArticles = filter_input(INPUT_POST, 'nbArticles', FILTER_SANITIZE_NUMBER_INT);
     if (empty($nbArticles)) {
-        $error['nbArticles'] = 'Le nombre d\'articles n\'est pas bon';
+        $error['nbArticles'] = 'Veuillez sélectionner le nombre d\'articles';
     } else {
         if ($nbArticles == 5 || $nbArticles == 8 || $nbArticles == 11) {
             setcookie(
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 "/"
             );
         } else {
-            $error['nbArticles'] = 'donnée non valide';
+            $error['nbArticles'] = 'Les données ne sont pas valide';
         }
     }
 
@@ -26,10 +26,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $categorys = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY) ?? [];
 
     if (empty($categorys)) {
-        $error['categories'] = 'Remplir le formulaire';
+        $error['categories'] = 'Veuillez sélectionner des catégories';
     } else {
         if (count($categorys) != 3) {
-            $error['categories'] = 'Donnée non valide';
+            $error['categories'] = 'Veuillez choisir trois catégories';
         } else {
             $valueCookie = serialize($categorys);
             setcookie(

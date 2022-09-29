@@ -24,7 +24,6 @@ function displayArticleHome($urlrss, $numberItem)
     }
 }
 
-
 // Affichage article page
 function displayArticlePage($urlrss, $numberItem)
 {
@@ -40,6 +39,7 @@ function displayArticlePage($urlrss, $numberItem)
         }
         echo
         '
+       
         <div class="article-pages">
             <div>
                 <div class="title-section title-article-section">
@@ -60,3 +60,33 @@ function displayArticlePage($urlrss, $numberItem)
         ';
     }
 }
+
+// Title article main
+function dislayMainTitleArticle($urlrss)
+{
+    $url = $urlrss;
+    $elem = new SimpleXMLElement($url, 0, true);
+
+    echo  $elem->channel->description;
+}
+
+// gestion navigation
+function navigationManagement($categories, $numberArticles)
+{
+    if (strstr($_SERVER['QUERY_STRING'], $categories)) {
+?>
+        <main>
+            <section class="catégorie">
+                <div class="title-section main-title-page">
+                    <h1><?php dislayMainTitleArticle($categories) ?></h1>
+                </div>
+                <?php
+                displayArticlePage($categories, $numberArticles);
+                ?>
+            </section>
+        </main>
+        </div>
+<?php
+    }
+}
+?>

@@ -16,22 +16,22 @@
         <!-- Nav -->
         <nav class="navbar">
             <div>
-                <h1>logo</h1>
+                <a href="/./controllers/homeControllers.php"><span>logo</span></a>
             </div>
             <div class="user-actuality">
                 <div>
                     <h2>Votre actualités</h2>
                 </div>
                 <!-- Choix users -->
-                <div>
+                <div class="categories-choice-desktop">
                     <span>
-                        <a href="/./controllers/pagesControllers.php">Premiere actu</a>
+                        <a href=<?= "/./controllers/pagesControllers.php?categories=$valueCookie[0]" ?>><?php dislayMainTitleArticle($valueCookie[0]) ?></a>
                     </span>
                     <span>
-                        <a href="/./controllers/pagesControllers.php">Deuxieme actu</a>
+                        <a href=<?= "/./controllers/pagesControllers.php?categories=$valueCookie[1]" ?>><?php dislayMainTitleArticle($valueCookie[1]) ?></a>
                     </span>
                     <span>
-                        <a href="/./controllers/pagesControllers.php">troisieme actu</a>
+                        <a href=<?= "/./controllers/pagesControllers.php?categories=$valueCookie[2]" ?>><?php dislayMainTitleArticle($valueCookie[2]) ?></a>
                     </span>
                 </div>
             </div>

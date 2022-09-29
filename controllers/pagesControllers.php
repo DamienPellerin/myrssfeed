@@ -2,10 +2,12 @@
 <?php
 require_once __DIR__ . '/../config/helpers/fonctions.php';
 
-$title = "Votre flux d'actualités";
-
 $numberArticle = $_COOKIE['article'];
 $valueCookie = unserialize($_COOKIE['categorie']);
+
+$title = "Votre flux d'actualités";
+
+
 
 
 // include

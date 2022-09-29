@@ -33,7 +33,7 @@
                             <label for="twelve">12 articles</label>
                             <input type="radio" id="twelve" value="11" name="nbArticles">
                         </div>
-                        <p class="error-text">erreur</p>
+                        <p class="error-text"><?= $error['nbArticles'] ?? "" ?></p>
                     </div>
                 </div>
 
@@ -44,14 +44,14 @@
                     <div class="userchoice-categories-article">
                         <?php foreach ($links as $key => $link) { ?>
                             <div>
-                                <label for="<?= $key ?>"><?= $key ?></label>
                                 <input type="checkbox" id="<?= $key ?>" value="<?= $link ?>" name="category[]">
+                                <label for="<?= $key ?>"><?= $key ?></label>
                             </div>
                         <?php } ?>
-                        <p class="error-text">erreur</p>
+                        <p class="error-text"><?= $error['categories'] ?? "" ?></p>
                     </div>
                 </div>
-                <button type="submit">Envoie</button>
+                <button type="submit">Générer</button>
             </form>
         </div>
     </main>
