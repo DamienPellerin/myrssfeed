@@ -1,0 +1,9 @@
+
+ErrorDocument 404 /404.php
+
+RewriteEngine on
+
+RewriteRule ^404$ controllers/404Controller.php
+RewriteRule ^formulaire$ controllers/parametersController.php
+RewriteRule ^home$ controllers/homeControllers.php
+RewriteRule ^pages$ controllers/pagesControllers.php

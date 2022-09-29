@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    height: 100vh;
+    background-image: url('/public/assets/img/arcade1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.title h1{ 
+    padding-top: 200px;
+    font-size: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.page{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Tomorrow', sans-serif;
+    height: 150px;
+}
+
+.return{
+    text-align: center; 
+    font-size: 25px;  
+}
+
+a{ 
+   text-decoration: none;
+   color: rgb(252, 252, 252);
+   font-weight: 800;
+}
+
+.return a{
+    border: 2px solid #4B96DB;
+    color: #fdfdfd;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.return a:hover{
+    cursor: pointer;
+    color: #F3F3F3;
+    background-color: #4B96DB;
+}

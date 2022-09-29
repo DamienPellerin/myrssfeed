@@ -62,7 +62,7 @@ function displayArticlePage($urlrss, $numberItem)
 }
 
 // Title article main
-function dislayMainTitleArticle($urlrss)
+function displayMainTitleArticle($urlrss)
 {
     $url = $urlrss;
     $elem = new SimpleXMLElement($url, 0, true);
@@ -78,7 +78,7 @@ function navigationManagement($categories, $numberArticles)
         <main>
             <section class="catégorie">
                 <div class="title-section main-title-page">
-                    <h1><?php dislayMainTitleArticle($categories) ?></h1>
+                    <h1><?php displayMainTitleArticle($categories) ?></h1>
                 </div>
                 <?php
                 displayArticlePage($categories, $numberArticles);

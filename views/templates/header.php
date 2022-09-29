@@ -16,7 +16,7 @@
         <!-- Nav -->
         <nav class="navbar">
             <div>
-                <a href="/./controllers/homeControllers.php"><span>logo</span></a>
+                <a href="formulaire"><span>logo</span></a>
             </div>
             <div class="user-actuality">
                 <div>
@@ -25,19 +25,19 @@
                 <!-- Choix users -->
                 <div class="categories-choice-desktop">
                     <span>
-                        <a href=<?= "/./controllers/pagesControllers.php?categories=$valueCookie[0]" ?>><?php dislayMainTitleArticle($valueCookie[0]) ?></a>
+                        <a href=<?= "pages?categories=$valueCookie[0]" ?>><?php displayMainTitleArticle($valueCookie[0]) ?></a>
                     </span>
                     <span>
-                        <a href=<?= "/./controllers/pagesControllers.php?categories=$valueCookie[1]" ?>><?php dislayMainTitleArticle($valueCookie[1]) ?></a>
+                        <a href=<?= "pages?categories=$valueCookie[1]" ?>><?php displayMainTitleArticle($valueCookie[1]) ?></a>
                     </span>
                     <span>
-                        <a href=<?= "/./controllers/pagesControllers.php?categories=$valueCookie[2]" ?>><?php dislayMainTitleArticle($valueCookie[2]) ?></a>
+                        <a href=<?= "pages?categories=$valueCookie[2]" ?>><?php displayMainTitleArticle($valueCookie[2]) ?></a>
                     </span>
                 </div>
             </div>
             <!-- Settings -->
             <div class="settings">
-                <a href="/controllers/parametersController.php">
+                <a href="formulaire">
                     <i class="fa-solid fa-gears"></i>
                     <span>Options</span>
                 </a>

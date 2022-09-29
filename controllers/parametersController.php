@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
     if (empty($error)) {
-        header('location: http://myrssfeed.localhost/controllers/homeControllers.php');
+        header('location: http://myrssfeed.localhost/home');
         exit;
     }
 }

@@ -9,8 +9,8 @@
     <section class="catégorie">
         <div class="title-section">
             <!-- Variable catégorie -->
-            <h3><?php dislayMainTitleArticle($valueCookie[0]) ?></h3>
-            <span><a href=<?= "/./controllers/pagesControllers.php?categories=$valueCookie[0]" ?>>voir tout</a></span>
+            <h3><?= displayMainTitleArticle($valueCookie[0]) ?></h3>
+            <span><a href=<?= "pages?categories=$valueCookie[0]" ?>>voir tout</a></span>
         </div>
         <div class="all-articles">
             <?php
@@ -22,8 +22,8 @@
     <section class="catégorie">
         <div class="title-section">
             <!-- Variable catégorie -->
-            <h3><?php dislayMainTitleArticle($valueCookie[1]) ?></h3>
-            <span><a href=<?= "/./controllers/pagesControllers.php?categories=$valueCookie[1]" ?>>voir tout</a></span>
+            <h3><?php displayMainTitleArticle($valueCookie[1]) ?></h3>
+            <span><a href=<?= "pages?categories=$valueCookie[1]" ?>>voir tout</a></span>
         </div>
         <div class="all-articles">
             <?php
@@ -35,8 +35,8 @@
     <section class="catégorie">
         <div class="title-section">
             <!-- Variable catégorie -->
-            <h3><?php dislayMainTitleArticle($valueCookie[2]) ?></h3>
-            <span><a href=<?= "/./controllers/pagesControllers.php?categories=$valueCookie[2]" ?>>voir tout</a></span>
+            <h3><?php displayMainTitleArticle($valueCookie[2]) ?></h3>
+            <span><a href=<?= "pages?categories=$valueCookie[2]" ?>>voir tout</a></span>
         </div>
         <div class="all-articles">
             <?php
